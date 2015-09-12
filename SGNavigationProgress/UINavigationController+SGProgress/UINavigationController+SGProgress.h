@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SGProgressView.h"
 
 #define kSGProgressTitleChanged @"kSGProgressTitleChanged"
 #define kSGProgressOldTitle @"kSGProgressOldTitle"
@@ -28,5 +29,7 @@
 - (void)setSGProgressPercentage:(float)percentage andTintColor:(UIColor *)tintColor;
 - (void)setSGProgressMaskWithPercentage:(float)percentage;
 - (void)setSGProgressMaskWithPercentage:(float)percentage andTitle:(NSString *)title;
+
+- (SGProgressView *)progressView;
 
 @end
